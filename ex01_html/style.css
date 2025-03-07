@@ -1,0 +1,13 @@
+
+p{
+    background-color: aqua;
+}
+
+#first,#third{
+    background-color: red;
+}
+
+.class-mystyle{
+    background-color: green;
+    text-align: center;
+}
