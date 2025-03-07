@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- <link rel="stylesheet" href="css/styles.css" /> -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="icon" type="image/png" href="/favicon.ico" />
+    <title>Todo App</title>
+  </head>
+  <body>
+    <nav class="bg-green-700 border-b border-green-500">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex h-20 items-center justify-between">
+          <!-- Logo -->
+          <a class="flex items-center" href="index.html">
+            <img class="h-10 w-auto" src="images/logo.png" alt="Vue Todos" />
+            <span class="hidden md:block text-white text-2xl font-bold ml-2">
+              Todo Application
+            </span>
+          </a>
+    
+          <!-- Mobile Menu Button -->
+          <button id="menu-toggle" class="md:hidden text-white focus:outline-none">
+            <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </button>
+    
+          <!-- Navigation Links -->
+          <div class="hidden md:flex space-x-4">
+            <a href="index.html" class="text-white hover:bg-green-900 rounded-md px-3 py-2">
+              Home
+            </a>
+            <a href="todos.html" class="text-white hover:bg-green-900 rounded-md px-3 py-2">
+              Todos
+            </a>
+            <a href="add-todo.html" class="text-white hover:bg-green-900 rounded-md px-3 py-2">
+              Add Todo
+            </a>
+            <a href="teams-todo.html" class="text-white hover:bg-green-900 rounded-md px-3 py-2">
+              Teams Todo
+            </a>
+            <a href="login.html" class="text-white hover:bg-green-900 rounded-md px-3 py-2">
+              Logout
+            </a>
+          </div>
+        </div>
+    
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden flex flex-col mt-2 space-y-2 bg-green-800 p-4 rounded-lg">
+          <a href="index.html" class="text-white hover:bg-green-900 px-3 py-2 rounded-md">Home</a>
+          <a href="todos.html" class="text-white hover:bg-green-900 px-3 py-2 rounded-md">Todos</a>
+          <a href="add-todo.html" class="text-white hover:bg-green-900 px-3 py-2 rounded-md">Add Todo</a>
+          <a href="teams-todo.html" class="text-white hover:bg-green-900 px-3 py-2 rounded-md">Teams Todo</a>
+          <a href="login.html" class="text-white hover:bg-green-900 px-3 py-2 rounded-md">Logout</a>
+        </div>
+      </div>
+    
+      <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const mobileMenu = document.getElementById("mobile-menu");
+    
+        menuToggle.addEventListener("click", () => {
+          mobileMenu.classList.toggle("hidden");
+        });
+      </script>
+    </nav>
+
+    <!-- Go Back -->
+    <section>
+      <div class="container m-auto py-6 px-6">
+        <a
+          href="todos.html"
+          class="text-green-500 hover:text-green-600 flex items-center"
+        >
+          <i class="fas fa-arrow-left mr-2"></i> Back to Todo Listings
+        </a>
+      </div>
+    </section>
+
+    <section class="bg-green-50">
+      <div class="container m-auto py-10 px-6">
+        <div class="grid grid-cols-1 md:grid-cols-70/30 w-full gap-6">
+          <main>
+            <div
+              class="bg-white p-6 rounded-lg shadow-md text-center md:text-left"
+            >
+              <div class="text-gray-500 mb-4">Todo Title</div>
+              <h1 class="text-3xl font-bold mb-4">Learn HTML</h1>
+              <div
+                class="text-gray-500 mb-4 flex align-middle justify-center md:justify-start"
+              >
+              </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md mt-6">
+              <h3 class="text-green-800 text-lg font-bold mb-6">
+                Todo Description
+              </h3>
+
+              <p class="mb-4">
+                Master the basics of HTML, including elements, attributes, and page structuring.
+              </p>
+            </div>
+          </main>
+
+          <!-- Sidebar -->
+          <aside class="bg-white p-6 rounded-lg shadow-md">
+            <!-- Manage -->
+            <div class="bg-white p-6 rounded-lg shadow-md mt-6">
+              <h3 class="text-xl font-bold mb-6">Status</h3>
+              <div class="text-orange-700 mb-3">
+                <h3 class="text-green-500 mb-2">Status: In Progress</h3>
+              </div>
+            </div>
+            <!-- Manage -->
+            <div class="bg-white p-6 rounded-lg shadow-md mt-6">
+              <h3 class="text-xl font-bold mb-6">Manage Todo</h3>
+              <a
+                href="add-todo.html"
+                class="bg-green-500 hover:bg-green-600 text-white text-center font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block"
+                >Edit Todo</a
+              >
+              <button
+                class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block"
+              >
+                Delete Todo
+              </button>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

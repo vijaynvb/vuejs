@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- <link rel="stylesheet" href="css/styles.css" /> -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="icon" type="image/png" href="/favicon.ico" />
+    <title>Todo App</title>
+  </head>
+  <body>
+    <nav class="bg-green-700 border-b border-green-500">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex h-20 items-center justify-between">
+          <!-- Logo -->
+          <a class="flex items-center" href="index.html">
+            <img class="h-10 w-auto" src="images/logo.png" alt="Vue Todos" />
+            <span class="hidden md:block text-white text-2xl font-bold ml-2">
+              Todo Application
+            </span>
+          </a>
+    
+          <!-- Mobile Menu Button -->
+          <button id="menu-toggle" class="md:hidden text-white focus:outline-none">
+            <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </button>
+    
+          <!-- Navigation Links -->
+          <div class="hidden md:flex space-x-4">
+            <a href="index.html" class="text-white hover:bg-green-900 rounded-md px-3 py-2">
+              Home
+            </a>
+            <a href="todos.html" class="text-white hover:bg-green-900 rounded-md px-3 py-2">
+              Todos
+            </a>
+            <a href="add-todo.html" class="text-white hover:bg-green-900 rounded-md px-3 py-2">
+              Add Todo
+            </a>
+            <a href="teams-todo.html" class="text-white bg-green-900 hover:bg-gray-900 rounded-md px-3 py-2">
+              Teams Todo
+            </a>
+            <a href="login.html" class="text-white hover:bg-green-900 rounded-md px-3 py-2">
+              Logout
+            </a>
+          </div>
+        </div>
+    
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden flex flex-col mt-2 space-y-2 bg-green-800 p-4 rounded-lg">
+          <a href="index.html" class="text-white hover:bg-green-900 px-3 py-2 rounded-md">Home</a>
+          <a href="todos.html" class="text-white hover:bg-green-900 px-3 py-2 rounded-md">Todos</a>
+          <a href="add-todo.html" class="text-white hover:bg-green-900 px-3 py-2 rounded-md">Add Todo</a>
+          <a href="teams-todo.html" class="text-white hover:bg-green-900 px-3 py-2 rounded-md">Teams Todo</a>
+          <a href="login.html" class="text-white hover:bg-green-900 px-3 py-2 rounded-md">Logout</a>
+        </div>
+      </div>
+    
+      <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const mobileMenu = document.getElementById("mobile-menu");
+    
+        menuToggle.addEventListener("click", () => {
+          mobileMenu.classList.toggle("hidden");
+        });
+      </script>
+    </nav>
+
+    <!-- Filter Todos -->
+    <section class="bg-green-50 py-4">
+      <div class="container mx-auto px-4">
+        <div class="relative">
+          <input
+            type="text"
+            class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-green-500"
+            placeholder="Filter Todos..."
+          />
+        </div>
+      </div>
+    </section>
+    
+    <!-- All Todos -->
+    <section class="bg-green-50 px-4 py-10">
+    <div class="container-xl lg:container m-auto">
+      <h2 class="text-3xl font-bold text-green-500 mb-6 text-center">
+        Browse Teams Todo
+      </h2>
+      <div class="grid grid-cols-1 gap-6">
+      <!-- Todo Item 1 -->
+      <div class="bg-white rounded-xl shadow-md relative">
+          <div class="p-4">
+            <div class="mb-1">
+              <div class="text-gray-600 my-2">Due: 2025-03-12</div>
+              <h3 class="text-xl font-bold">Build a Responsive Navigation Bar</h3>
+            </div>
+            <div class="mb-2">
+              Create a responsive navigation bar using HTML and CSS. Ensure it includes a dropdown menu and adapts to different screen sizes.
+            </div>
+            <div class="flex flex-col lg:flex-row justify-between">
+              <div class="text-orange-700">
+                <h3 class="text-green-500">Status: Not Assigned</h3>
+              </div>
+              <a
+                href="notassign-todo.html"
+                class="h-[36px] bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-center text-sm"
+              >
+                View Task
+              </a>
+            </div>
+          </div>
+        </div>
+
+      <!-- Todo Item 2 -->
+      <div class="bg-white rounded-xl shadow-md relative">
+        <div class="p-4">
+          <div class="mb-1">
+            <div class="text-gray-600 my-2">Due: 2025-03-14</div>
+            <h3 class="text-xl font-bold">Implement a Dark Mode Toggle</h3>
+          </div>
+          <div class="mb-2">
+            Use JavaScript and CSS to implement a dark mode toggle for a website. The user’s preference should be stored in local storage.
+          </div>
+          <div class="flex flex-col lg:flex-row justify-between">
+            <div class="text-orange-700">
+              <h3 class="text-green-500">Status: Not Assigned</h3>
+            </div>
+            <a
+              href="notassign-todo.html"
+              class="h-[36px] bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-center text-sm"
+            >
+              View Task
+            </a>
+          </div>
+        </div>
+      </div>
+
+    <!-- Todo Item 3 -->
+    <div class="bg-white rounded-xl shadow-md relative">
+        <div class="p-4">
+          <div class="mb-1">
+            <div class="text-gray-600 my-2">Due: 2025-03-15</div>
+            <h3 class="text-xl font-bold">Create a Contact Form with Validation</h3>
+          </div>
+          <div class="mb-2">
+            Develop a contact form using HTML, CSS, and JavaScript. Implement client-side validation to check for required fields and valid email formats.
+          </div>
+          <div class="flex flex-col lg:flex-row justify-between">
+            <div class="text-orange-700">
+              <h3 class="text-green-500">Status: Assigned</h3>
+            </div>
+            <a
+              href="assign-todo.html"
+              class="h-[36px] bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-center text-sm"
+            >
+              View Task
+            </a>
+          </div>
+        </div>
+      </div>
+
+    <!-- Todo Item 4 -->
+      <div class="bg-white rounded-xl shadow-md relative">
+        <div class="p-4">
+          <div class="mb-1">
+            <div class="text-gray-600 my-2">Due: 2025-03-17</div>
+            <h3 class="text-xl font-bold">Develop a CSS Animation Effect</h3>
+          </div>
+          <div class="mb-2">
+            Create a smooth CSS animation for buttons and modals. Implement hover effects and transitions to enhance user experience.
+          </div>
+          <div class="flex flex-col lg:flex-row justify-between">
+            <div class="text-orange-700">
+              <h3 class="text-green-500">Status: Assigned</h3>
+            </div>
+            <a
+              href="assign-todo.html"
+              class="h-[36px] bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-center text-sm"
+            >
+              View Task
+            </a>
+          </div>
+        </div>
+      </div>
+
+    <!-- Todo Item 5 -->
+    <div class="bg-white rounded-xl shadow-md relative">
+        <div class="p-4">
+          <div class="mb-1">
+            <div class="text-gray-600 my-2">Due: 2025-03-18</div>
+            <h3 class="text-xl font-bold">Build a To-Do List Application</h3>
+          </div>
+          <div class="mb-2">
+            Develop a simple to-do list application using JavaScript. Users should be able to add, remove, and mark tasks as completed.
+          </div>
+          <div class="flex flex-col lg:flex-row justify-between">
+            <div class="text-orange-700">
+              <h3 class="text-green-500">Status: Not Assigned</h3>
+            </div>
+            <a
+              href="notassign-todo.html"
+              class="h-[36px] bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-center text-sm"
+            >
+              View Task
+            </a>
+          </div>
+        </div>
+      </div>
+
+    <!-- Todo Item 6 -->
+      <div class="bg-white rounded-xl shadow-md relative">
+        <div class="p-4">
+          <div class="mb-1">
+            <div class="text-gray-600 my-2">Due: 2025-03-20</div>
+            <h3 class="text-xl font-bold">Implement a CSS Grid Layout for a Dashboard</h3>
+          </div>
+          <div class="mb-2">
+            Design a dashboard layout using CSS Grid. The layout should include sections for widgets, statistics, and a user profile.
+          </div>
+          <div class="flex flex-col lg:flex-row justify-between">
+            <div class="text-orange-700">
+              <h3 class="text-green-500">Status: Not Assigned</h3>
+            </div>
+            <a
+              href="notassign-todo.html"
+              class="h-[36px] bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-center text-sm"
+            >
+              View Task
+            </a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    </section>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
