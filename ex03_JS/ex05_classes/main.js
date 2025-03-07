@@ -7,12 +7,16 @@ class Person{
         this.name = name;
         this.age = age;
     }
+    static method(){
+        console.log("hello from static");
+    }
     print(){
         console.log("hello");
     }
 }
 
 var p = new Person("vijay",10);
+Person.method();
 console.log(typeof p);
 
 
