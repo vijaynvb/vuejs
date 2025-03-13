@@ -11,13 +11,14 @@
 // import MyAppRouterBasics from '@/components/10-VueRouterBasics/MyApp.vue';
 // import MyAppNestedRoutes from './components/31-NestedRoutes/MyApp.vue';
 // import MyAppDynamicNavigation from './components/32-ProgrammaticNavigation/MyApp.vue';
-
 // import MyAppNamedRoutes from './components/33-NamedRoutes/MyApp.vue';
-
-
 //  import MyAppNamedViews from './components/34-NamedViews/MyApp.vue';
-import MyAppRouteGuards from './components/35-RouteGuards/MyApp.vue';
-
+// import MyAppRouteGuards from './components/35-RouteGuards/MyApp.vue';
+// import ParentComponent from './components/09-EventCommunication/ParentComponent.vue';
+// import MyAppPropsEvents from './components/26-PropsAndEvents/MyApp.vue';
+//  import EventModifiers from './components/17-EventModifiers/EventModifiers.vue';
+// import KeyModifiers from './components/18-KeyModifiers/KeyModifiers.vue';
+import ParentComponent from './components/22-LifeCycleHooks/ParentComponent.vue';
 </script>
 
 <template>
@@ -35,7 +36,13 @@ import MyAppRouteGuards from './components/35-RouteGuards/MyApp.vue';
      <!-- <MyAppDynamicNavigation /> -->
       <!-- <MyAppNamedRoutes /> -->
        <!-- <MyAppNamedViews /> -->
-        <MyAppRouteGuards />
+        <!-- <MyAppRouteGuards /> -->
+  <!-- <ParentComponent /> -->
+   <!-- <MyAppPropsEvents /> -->
+
+    <!-- <EventModifiers /> -->
+    <!-- <KeyModifiers /> -->
+     <ParentComponent />
 </template>
 
 <style scoped>
