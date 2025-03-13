@@ -48,3 +48,12 @@
         mongo client        mongoese1         todo.db replication server 
                             mongoese2         todo.db 
 
+
+smer version 
+    x.y.z ->  ^1.0.0
+    x= major -> new feature -> breaking change 
+    y = minor -> enhancement of your spint -> will not have breaking -> db 
+    z= bug fix -> 
+
+stable -> LTS -> 3 
+
