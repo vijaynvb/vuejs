@@ -18,7 +18,14 @@
 // import MyAppPropsEvents from './components/26-PropsAndEvents/MyApp.vue';
 //  import EventModifiers from './components/17-EventModifiers/EventModifiers.vue';
 // import KeyModifiers from './components/18-KeyModifiers/KeyModifiers.vue';
-import ParentComponent from './components/22-LifeCycleHooks/ParentComponent.vue';
+// import ParentComponent from './components/22-LifeCycleHooks/ParentComponent.vue';
+
+// import ReactiveVsProxy from './components/14-ReactiveVsProxy/ReactiveVsProxy.vue';
+// import ComputedProperties from './components/15-ComputedProperties/ComputedProperties.vue';
+// import DeepAndEagerWatchers from './components/16-DeepAndEagerWatchers/DeepAndEagerWatchers.vue';
+// import MyAppSlots from './components/27-ContentDistributionWithSolts/MyApp.vue';
+// import MyApp from './components/21-V-ModelComponent/MyApp.vue';
+import MyAppPiniaCoreConcepts from './components/38-PiniaCoreConcepts/MyApp.vue';
 </script>
 
 <template>
@@ -42,7 +49,14 @@ import ParentComponent from './components/22-LifeCycleHooks/ParentComponent.vue'
 
     <!-- <EventModifiers /> -->
     <!-- <KeyModifiers /> -->
-     <ParentComponent />
+     <!-- <ParentComponent /> -->
+
+     <!-- <ReactiveVsProxy />  -->
+      <!-- <ComputedProperties /> -->
+      <!-- <DeepAndEagerWatchers /> -->
+       <!-- <MyAppSlots /> -->
+        <!-- <MyApp /> -->
+         <MyAppPiniaCoreConcepts />
 </template>
 
 <style scoped>
