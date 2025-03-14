@@ -1,0 +1,57 @@
+{
+  "todos": [
+    { 
+      "id": 1, 
+      "title": "Learn HTML", 
+      "description": "Master the basics of HTML, including elements, attributes, and page structuring.", 
+      "due": "2025-03-10", 
+      "status": "In Progress" 
+    },
+    { 
+      "id": 2, 
+      "title": "Learn Vue JS", 
+      "description": "Explore Vue.js fundamentals, including components, directives, and state management.", 
+      "due": "2025-03-15", 
+      "status": "Not Started" 
+    },
+    { 
+      "id": 3, 
+      "title": "Build a Personal Portfolio", 
+      "description": "Create a professional portfolio website using HTML, CSS, and JavaScript. Showcase your skills, projects, and achievements in an engaging manner. Ensure the website is fully responsive, includes an about section, project showcases, and a contact form. Utilize modern design trends like dark mode and animations for an enhanced user experience.", 
+      "due": "2025-03-20", 
+      "status": "Not Started" 
+    },
+    { 
+      "id": 4, 
+      "title": "Master JavaScript ES6+ Features", 
+      "description": "Deep dive into modern JavaScript ES6+ features, including arrow functions, template literals, destructuring, async/await, and modules. Learn how these features improve code readability and efficiency. Implement these concepts in real-world projects and explore the advantages they bring to web development.", 
+      "due": "2025-03-25", 
+      "status": "In Progress" 
+    },
+    { 
+      "id": 5, 
+      "title": "Develop a Full-Stack MERN App", 
+      "description": "Design and develop a full-stack application using MongoDB, Express, React, and Node.js (MERN stack). Set up backend APIs using Express.js, create a dynamic frontend with React, and manage state efficiently. Implement authentication, CRUD operations, and deploy the application to a cloud platform for accessibility.", 
+      "due": "2025-04-05", 
+      "status": "Not Started" 
+    },
+    { 
+      "id": 6, 
+      "title": "Learn TypeScript with Vue", 
+      "description": "Explore how TypeScript enhances Vue.js development by providing type safety, better idE support, and improved maintainability. Understand TypeScript fundamentals, interfaces, and types before integrating them into Vue components, props, and store management with Pinia. Refactor an existing Vue project to leverage TypeScript benefits.", 
+      "due": "2025-04-10", 
+      "status": "Planned" 
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "firstName": "Admin",
+      "lastName": "User",
+      "email": "admin@example.com",
+      "password": "admin123", 
+      "location": "Headquarters",
+      "role": "admin"
+    }
+]
+}
